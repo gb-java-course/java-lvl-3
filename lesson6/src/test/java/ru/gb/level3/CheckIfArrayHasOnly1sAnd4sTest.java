@@ -36,4 +36,14 @@ public class CheckIfArrayHasOnly1sAnd4sTest {
     void checkIfArrayHasOnly1sAnd4sTest6() {
         assertFalse(Lesson6Utils.checkIfArrayHasOnly1sAnd4s(new int[] {1, 1, 1, 3, 4, 4, 4, 4}));
     }
+
+    @Test
+    void checkIfArrayHasOnly1sAnd4sTest7() {
+        assertFalse(Lesson6Utils.checkIfArrayHasOnly1sAnd4s(new int[] {1, 1, 1, 1, 1, 1}));
+    }
+
+    @Test
+    void checkIfArrayHasOnly1sAnd4sTest8() {
+        assertFalse(Lesson6Utils.checkIfArrayHasOnly1sAnd4s(new int[] {4, 4, 4, 4}));
+    }
 }

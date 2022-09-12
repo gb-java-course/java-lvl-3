@@ -31,10 +31,20 @@ public class Lesson6Utils {
             return false;
         }
 
+        int count1s = 0;
+        int count4s = 0;
         for (int n : array) {
-            if (n != 1 && n != 4) {
+            if (n == 1) {
+                count1s++;
+            } else if (n == 4) {
+                count4s++;
+            } else {
                 return false;
             }
+        }
+
+        if (count1s == 0 || count4s == 0) {
+            return false;
         }
 
         return true;
